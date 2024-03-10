@@ -4,9 +4,6 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
-  images: {
-    domains: ['placehold.co'],
-  },
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.svg$/,
