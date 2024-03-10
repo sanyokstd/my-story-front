@@ -1,14 +1,26 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  webpack(config) {
+const path = require('path');
+
+module.exports = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
+  images: {
+    domains: ['placehold.co'],
+  },
+  webpack: (config, options) => {
     config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: ["@svgr/webpack"],
+      test: /\.svg$/,
+      use: [
+        options.defaultLoaders.babel,
+        {
+          loader: '@svgr/webpack',
+          options: {
+            icon: true,
+          },
+        },
+      ],
     });
 
     return config;
   },
 };
-
-module.exports = nextConfig;

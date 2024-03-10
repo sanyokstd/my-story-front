@@ -1,0 +1,14 @@
+.btn {
+  position: relative;
+}
+
+.count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  font-size: 12px;
+  pointer-events: none;
+}
