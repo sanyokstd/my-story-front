@@ -1,0 +1,19 @@
+.btn {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+  transition: 0.1s ease-in;
+  color: var(--greyDark);
+  cursor: pointer;
+  &:hover {
+    background-color: var(--grey);
+  }
+  svg {
+    width: 24px;
+    height: auto;
+  }
+}

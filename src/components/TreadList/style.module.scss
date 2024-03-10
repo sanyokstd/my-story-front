@@ -1,0 +1,137 @@
+.treadList {
+  max-width: 680px;
+  padding-top: 50px;
+}
+
+.item {
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--grey);
+  padding-top: 32px;
+  &:first-of-type {
+    padding-top: 0;
+  }
+}
+
+.itemTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.authorAvatar {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.authorName {
+  font-size: 14px;
+}
+
+.itemDate {
+  color: var(--darkGrey);
+  font-size: 14px;
+  padding-left: 10px;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--darkGrey);
+    border-radius: 100%;
+    height: 2px;
+    width: 2px;
+  }
+}
+
+.itemMain {
+  margin-top: 12px;
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+
+  .itemTitle {
+    font-size: 20px;
+    font-weight: 700;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+  }
+
+  .itemImg {
+    margin-left: 25px;
+    flex: 0 0 112px;
+  }
+
+  .itemShor {
+    margin-top: 8px;
+  }
+
+  .itemLeft {
+    flex: 1;
+  }
+
+  &:hover {
+    text-decoration: none;
+    .itemTitle {
+      text-decoration: underline;
+    }
+  }
+}
+
+.itemBot {
+  display: flex;
+  padding-top: 32px;
+  justify-content: space-between;
+}
+
+.itemBotLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tag {
+  display: block;
+  text-align: center;
+  padding: 2px 8px;
+  background-color: var(--grey);
+  min-width: 26px;
+  border-radius: 20px;
+  &:hover {
+    text-decoration: none;
+    background-color: var(--greyHover);
+  }
+}
+
+.itemRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.comments {
+  display: flex;
+  align-items: center;
+  .commentsTitle {
+    font-size: 14px;
+  }
+  &:hover {
+    text-decoration: none;
+    .commentsTitle {
+      text-decoration: underline;
+    }
+  }
+}
