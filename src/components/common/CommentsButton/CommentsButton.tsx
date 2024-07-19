@@ -1,6 +1,6 @@
 'use client';
 
-import CommentsIcon from '@/public/assets/icons/comments.svg';
+import CommentsIcon from '@/assets//icons/comments.svg';
 import IconButton from '../IconButton/IconButton';
 import { Tooltip } from 'react-tooltip';
 import Link from 'next/link';

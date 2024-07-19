@@ -1,4 +1,4 @@
-import TreadList from '@/src/components/TreadList/TreadList';
+import { Recommendations, TreadList } from '@/components';
 import s from './style.module.scss';
 
 export default function MainPage() {
@@ -8,7 +8,9 @@ export default function MainPage() {
         <div className={s.left}>
           <TreadList />
         </div>
-        <div className={s.right}>2</div>
+        <div className={s.right}>
+          <Recommendations />
+        </div>
       </div>
     </div>
   );

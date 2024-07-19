@@ -1,7 +1,7 @@
 'use client';
 
 import IconButton from '../IconButton/IconButton';
-import Favorite from '@/public/assets/icons/favorite.svg';
+import Favorite from '@/assets//icons/favorite.svg';
 import { Tooltip } from 'react-tooltip';
 
 interface Props {
